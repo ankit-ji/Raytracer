@@ -24,15 +24,16 @@ raytracer/
 
 ### 🔧 Compile (Linux/Mac)
 
-```bash
 g++ -o image main.cpp
-
+ 
 ▶️ Run and generate image
 ./image > image.ppm
+
 🪟 On Windows
 Using CMD:
 g++ -o image.exe main.cpp
 image.exe > image.ppm
+
 🖼️ Viewing the Output
 You can open image.ppm with:
 
