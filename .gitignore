@@ -1,4 +1,7 @@
 build/
 *.o
 *.exe
+raytracer
 *.ppm
+.DS_Store
+*~
