@@ -33,4 +33,32 @@ g++ -o image main.cpp
 Using CMD:
 g++ -o image.exe main.cpp
 image.exe > image.ppm
+🖼️ Viewing the Output
+You can open image.ppm with:
 
+GIMP
+
+IrfanView
+
+ImageMagick (display image.ppm)
+
+Online PPM viewer tools
+
+🛣️ Next Steps
+This is just the beginning. Future commits will include:
+
+Ray generation
+
+Sphere intersection
+
+Surface normals
+
+Materials, lighting, reflections, and more
+
+📚 Reference
+This project is based on the excellent book:
+
+📖 Ray Tracing in One Weekend
+
+🧑‍💻 Author
+Ankit – CSE Student, MVJCE
