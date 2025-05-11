@@ -11,10 +11,15 @@ The output format is PPM (Portable Pixmap), which is human-readable and easy to 
 ## Directory Structure
 
 .
+
 ├── .gitignore # Ignores build files, temporary files, etc.
+
 ├── LICENSE # Project license (e.g., MIT)
+
 ├── README.md # This file
+
 ├── main.cpp # Core renderer logic
+
 
 
 ## Build Instructions
@@ -35,14 +40,15 @@ To build and run the program directly:
 g++ main.cpp -o raytracer
 ./raytracer > image.ppm
 ```
-Using CMake
+>>>Using CMake
 Recommended if you're planning to expand this project.
-
+```bash
 cmake -B build
 cmake --build build
 ./build/raytracer > image.ppm
+```
 
-Future Improvements
+>>>Future Improvements
 Add vector math utilities (vec3.h)
 Implement ray generation and hit detection
 Add spheres, materials, and camera logic
