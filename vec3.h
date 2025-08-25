@@ -1,8 +1,8 @@
 #ifndef VEC3_H
 #define VEC3_H
 
-#include <cmath>
-#include <iostream>
+// #include <cmath> {Listing 29: [vec3.h] Assume rtweekend.h inclusion for vec3.h}
+// #include <iostream> {Listing 29: [vec3.h] Assume rtweekend.h inclusion for vec3.h}
 
 class vec3 {
   public:
