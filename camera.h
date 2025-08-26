@@ -1,16 +1,16 @@
 #ifndef CAMERA_H
 #define CAMERA_H
-
+#include "vec3.h"
 #include "hittable.h"
 
 class camera {
     public:
       double aspect_ratio = 1.0;  // Ratio of image width over height
       int    image_width  = 100;  // Rendered image width in pixel count
-      int sample_per_pixel = 10
+      int sample_per_pixel = 10;
   
       void render(const hittable& world) {
-          initialize();
+          initialize() ;
   
           std::cout << "P3\n" << image_width << ' ' << image_height << "\n255\n";
   
@@ -18,7 +18,7 @@ class camera {
               std::clog << "\rScanlines remaining: " << (image_height - j) << ' ' << std::flush;
               for (int i = 0; i < image_width; i++) {
                 color pixel_color(0,0,0);
-                for (int sample = 0; sample < samples_per_pixel; sample++) {
+                for (int sample = 0; sample < sample_per_pixel; sample++) {
                     ray r = get_ray(i, j);
                     pixel_color += ray_color(r, world);
                 }
@@ -37,7 +37,7 @@ class camera {
       vec3   pixel_delta_v;  // Offset to pixel below
   
       void initialize() {
-          image_height = int(image_width / aspect_ratio);
+            image_height = int(image_width / aspect_ratio);
           image_height = (image_height < 1) ? 1 : image_height;
 
           pixel_samples_scale = 1.0/ sample_per_pixel;
